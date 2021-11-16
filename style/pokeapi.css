@@ -1,0 +1,196 @@
+body {
+  background-color: orangered;
+  margin: 0;
+  font-family: rubik;
+  color: white;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  /* sombra cartas */
+  box-shadow: 1px 10px 12px #222;
+  border-radius: 15px;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/*
+Lo cambiamos mas abajo segun el tipo de pokemon.
+
+.card-subtitle {
+  font-weight: lighter;
+  color: #666;
+  margin-top: 5px;
+}
+*/
+
+.card-image {
+  height: 180px;
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+.info-pokedex{
+  text-align: center;
+}
+
+.botones-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-anterior, .btn-siguiente {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 4px 6px #222;
+  border: none;
+  color: grey;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+/* Cambio de color cada tipo de Pokemon. */
+
+.card-subtitle span {
+  border-radius: 5px 5px;
+  padding: 5px 8px;
+  margin: 1px;
+  font-size: small;
+}
+
+.planta {
+  background: #73ad21;
+  color: black;
+}
+
+.veneno {
+  background: #b97fc9;
+  color: white;
+}
+
+.fuego {
+  background: #fd7d24;
+  color: white;
+}
+
+.agua {
+  background: #4592c4;
+  color: white;
+}
+
+.bicho {
+  background: #729f3f;
+  color: white;
+}
+
+.volador {
+  background: #3dc7ef;
+  color: white;
+}
+
+.normal {
+  background: #a4acaf;
+  color: white;
+}
+
+.electrico {
+  background: #eed535;
+  color: black;
+}
+
+.tierra {
+  background: #ab9842;
+  color: black;
+}
+
+.hada {
+  background: #fdb9e9;
+  color: black;
+}
+.lucha {
+  background: #d56723;
+  color: white;
+}
+
+.psíquico {
+  background: #f366b9;
+  color: white;
+}
+
+.roca {
+  background: #a38c21;
+  color: white;
+}
+.hielo {
+  background: #51c4e7;
+  color: black
+}
+
+.fantasma {
+  background: #7b62a3;
+  color: white;
+}
+
+.acero {
+  background:#9eb7b8;
+  color: black
+}
+.dragon {
+  background:  #f16e57 ;
+  color: white;
+}
+
+.siniestro {
+  background:  #707070;
+  color: white;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(-0px);
+  }
+}

@@ -19,7 +19,8 @@ h1 {
 .card {
   list-style: none;
   padding: 40px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4;*/
+  background-color: rgba(0, 100, 255, 0.3);
   color: #222;
   text-align: center;
   /* sombra cartas */
@@ -46,6 +47,8 @@ Lo cambiamos mas abajo segun el tipo de pokemon.
 
 .card-image {
   height: 180px;
+  background: white;
+  border-radius: 50%;
 }
 
 #pokedex {

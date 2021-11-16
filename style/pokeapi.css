@@ -1,5 +1,6 @@
 body {
-  background-color: orangered;
+  /* background-color: orangered; */
+  background-color: #4592c4;
   margin: 0;
   font-family: rubik;
   color: white;
@@ -20,7 +21,7 @@ h1 {
   list-style: none;
   padding: 40px;
   /* background-color: #f4f4f4;*/
-  background-color: rgba(0, 100, 255, 0.3);
+  background-color: rgba(230, 230, 255,1);
   color: #222;
   text-align: center;
   /* sombra cartas */
@@ -61,6 +62,13 @@ Lo cambiamos mas abajo segun el tipo de pokemon.
 .card:hover {
   animation: bounce 0.5s linear;
 }
+
+
+.logotipo{
+display:block;
+margin:auto;
+}
+
 
 .info-pokedex{
   text-align: center;

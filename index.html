@@ -23,20 +23,23 @@
 
 <body>
     <div class="container">
-        <h1>Pokedex Upgrade</h1>
-        <p class="info-pokedex">En esta Pokedex puedes ver desde el Pokemon 1 hasta el 888, en páginas de 24 personajes.
-        </p>
+	<img class="logotipo" src="images/pokemon-lg.svg" alt="Logo Pokémon">
+
+        <h1>Pokédex Upgrade</h1>
+        <p class="info-pokedex">En esta Pokédex puedes ver desde el Pokémon 1 hasta el 888, en páginas de 24 personajes.<br>Pulsando en el boton "Play" se inicia un pasador automático de cartas.</p>
+
         <div class="botones-pagina">
             <button class="btn-anterior">Anterior</button>
+            <button class="btn-cuenta-atras">Play</button>
             <button class="btn-siguiente">Siguiente</button>
-
         </div>
-
+        <div class="cuenta-atras"></div>
 
         <ol id="pokedex"></ol>
+        
     </div>
 
-    <script src="js/pokedex.js"></script>
+    <script src="js/pokedex_auto.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 body {
-  background-color: orangered;
+  /* background-color: orangered; */
+  background-color: #4592c4;
   margin: 0;
   font-family: rubik;
   color: white;
@@ -19,7 +20,8 @@ h1 {
 .card {
   list-style: none;
   padding: 40px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4;*/
+  background-color: rgba(230, 230, 255,1);
   color: #222;
   text-align: center;
   /* sombra cartas */
@@ -46,6 +48,8 @@ Lo cambiamos mas abajo segun el tipo de pokemon.
 
 .card-image {
   height: 180px;
+  background: white;
+  border-radius: 50%;
 }
 
 #pokedex {
@@ -59,31 +63,49 @@ Lo cambiamos mas abajo segun el tipo de pokemon.
   animation: bounce 0.5s linear;
 }
 
+
+.logotipo{
+display:block;
+margin:auto;
+}
+
+
 .info-pokedex{
   text-align: center;
 }
 
-.botones-pagina {
+.botones-pagina, .cuenta-atras{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.cuenta-atras{
+  height: 20px;
+}
 
-.btn-anterior, .btn-siguiente {
+.btn-anterior, .btn-siguiente, .btn-cuenta-atras {
   display: inline-block;
   border-radius: 10px;
-  background-color: white;
+  background-color: #ffcb05;
   box-shadow: 1px 4px 6px #222;
   border: none;
-  color: grey;
+  color: #2b72b8;
   text-align: center;
   font-size: 20px;
+  font-weight: bold;
   padding: 10px;
   width: 180px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 10px;
 }
+
+.btn-cuenta-atras{
+  background-color:darkgrey;
+  width: 100px;
+}
+
+
 /* Cambio de color cada tipo de Pokemon. */
 
 .card-subtitle span {

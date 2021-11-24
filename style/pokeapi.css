@@ -21,7 +21,7 @@ h1 {
   list-style: none;
   padding: 40px;
   /* background-color: #f4f4f4;*/
-  background-color: rgba(230, 230, 255,1);
+  background-color: rgba(230, 230, 255, 1);
   color: #222;
   text-align: center;
   /* sombra cartas */
@@ -47,9 +47,11 @@ Lo cambiamos mas abajo segun el tipo de pokemon.
 */
 
 .card-image {
-  height: 180px;
-  background: white;
-  border-radius: 50%;
+  width: 100%;
+  height: 200px;
+
+  /* background: white;
+  border-radius: 50%;*/
 }
 
 #pokedex {
@@ -63,27 +65,28 @@ Lo cambiamos mas abajo segun el tipo de pokemon.
   animation: bounce 0.5s linear;
 }
 
-
-.logotipo{
-display:block;
-margin:auto;
+.logotipo {
+  display: block;
+  margin: auto;
 }
 
-
-.info-pokedex{
+.info-pokedex {
   text-align: center;
 }
 
-.botones-pagina, .cuenta-atras{
+.botones-pagina,
+.cuenta-atras {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.cuenta-atras{
+.cuenta-atras {
   height: 20px;
 }
 
-.btn-anterior, .btn-siguiente, .btn-cuenta-atras {
+.btn-anterior,
+.btn-siguiente,
+.btn-cuenta-atras {
   display: inline-block;
   border-radius: 10px;
   background-color: #ffcb05;
@@ -100,11 +103,10 @@ margin:auto;
   margin: 10px;
 }
 
-.btn-cuenta-atras{
-  background-color:darkgrey;
+.btn-cuenta-atras {
+  background-color: darkgrey;
   width: 100px;
 }
-
 
 /* Cambio de color cada tipo de Pokemon. */
 
@@ -180,7 +182,7 @@ margin:auto;
 }
 .hielo {
   background: #51c4e7;
-  color: black
+  color: black;
 }
 
 .fantasma {
@@ -189,16 +191,16 @@ margin:auto;
 }
 
 .acero {
-  background:#9eb7b8;
-  color: black
+  background: #9eb7b8;
+  color: black;
 }
 .dragon {
-  background:  #f16e57 ;
+  background: #f16e57;
   color: white;
 }
 
 .siniestro {
-  background:  #707070;
+  background: #707070;
   color: white;
 }
 

@@ -263,8 +263,8 @@ const pokedexApi = () => {
         // Cargamos los datos de los pokemon en el objeto.
         const pokemon = results.map((result) => ({
             nombre: result.name,
-           // imagen: result.sprites['front_default'],
-            imagen: result.sprites.other.dream_world['front_default'],
+           // Traemos imagen en calidad SVG y si no la hay, cargamos la imagen por defecto: sprites['front_default'].
+            imagen: result.sprites.other.dream_world['front_default'] != null ? result.sprites.other.dream_world['front_default']:result.sprites['front_default'] ,
             tipo: result.types.map((type) => cambioTipo(type.type.name)).join(', '),
             id: result.id
         }));
